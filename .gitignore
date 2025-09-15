@@ -4,3 +4,5 @@ otelenv/pyvenv.cfg
 otelenv/bin/*
 *.cpython-311.pyc
 src/django_otel.egg-info/*
+dist/*
+.pypirc
