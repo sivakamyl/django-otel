@@ -3,13 +3,16 @@
 Seamlessly integrate OpenTelemetry and Azure Application Insights with Django.
 
 This package provides:
-✅ Automatic instrumentation for Django apps.
+
+✅ Automatic instrumentation and OpenTelemetry abstraction for Django apps to connect to Azure Application Insights.
 
 ✅ Reload-safe initialization (prevents multiple OTEL setups in Django’s development mode).
 
 ✅ Standard logs (TRACE → CRITICAL) sent to Application Insights.
 
 ✅ Console logging preserved for local debugging.
+
+✅ Log traceOps provision.
 
 
 ## Installation
@@ -52,4 +55,8 @@ contextLogger.warning("Page warning", path=request.path)
 These logs will appear in AZURE Application Insights Logs → Traces (TRACE → CRITICAL)
 
 
-✅ Custom Events support (including page views as events). - WIP
+## Work In Progress
+
+✅ Custom Events support (including page views as events).
+
+✅ Log Level customizations.
