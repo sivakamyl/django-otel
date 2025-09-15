@@ -1,10 +1,14 @@
 # django-otel
 
 Seamlessly integrate OpenTelemetry and Azure Application Insights with Django.
+
 This package provides:
 ✅ Automatic instrumentation for Django apps.
+
 ✅ Reload-safe initialization (prevents multiple OTEL setups in Django’s development mode).
+
 ✅ Standard logs (TRACE → CRITICAL) sent to Application Insights.
+
 ✅ Console logging preserved for local debugging.
 
 
