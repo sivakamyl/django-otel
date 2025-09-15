@@ -12,13 +12,14 @@ This package provides:
 
 ```bash
 pip install django-otel
+```
 
-
-** ⚙️ Configuration in settings.py **
+## ⚙️ Configuration in settings.py
 
 Add the following to your Django settings.py:
-
+```bash
 INSTALLED_APPS += ["django_otel"]
+
 
 # Azure Application Insights Connection String
 APPINSIGHTS_CONNECTION_STRING = "InstrumentationKey=YOUR-INSTRUMENTATION-KEY"
@@ -29,13 +30,13 @@ configure_opentelemetry(
     connection_string=APPINSIGHTS_CONNECTION_STRING,
     service_name=SERVICE_NAME
 )
-
+```
 
 This ensures OTEL is configured before Django finishes loading.
 
 
-** 🧰 Usage **
-
+## 🧰 Usage
+```bash
 from django_otel import contextLogger
 
 contextLogger.trace("Entering view", path=request.path)
@@ -43,7 +44,7 @@ contextLogger.info("Page accessed", path=request.path)
 contextLogger.debug("Page debug", path=request.path)
 contextLogger.critical("Critical", path=request.path)
 contextLogger.warning("Page warning", path=request.path)
-
+```
 These logs will appear in AZURE Application Insights Logs → Traces (TRACE → CRITICAL)
 
 
