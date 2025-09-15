@@ -1,0 +1,6 @@
+.DS_Store
+otelenv/lib/python3.11/*
+otelenv/pyvenv.cfg
+otelenv/bin/*
+*.cpython-311.pyc
+src/django_otel.egg-info/*
