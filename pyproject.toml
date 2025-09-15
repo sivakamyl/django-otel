@@ -38,10 +38,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/django-otel"
-Documentation = "https://github.com/yourusername/django-otel#readme"
-Repository = "https://github.com/yourusername/django-otel"
-Issues = "https://github.com/yourusername/django-otel/issues"
+Homepage = "https://github.com/sivakamyl/django-otel"
+Documentation = "https://github.com/sivakamyl/django-otel#readme"
+Repository = "https://github.com/sivakamyl/django-otel"
+Issues = "https://github.com/sivakamyl/django-otel/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
